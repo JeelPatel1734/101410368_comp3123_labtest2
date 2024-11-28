@@ -1,13 +1,108 @@
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0 0 20px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #f96d00;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search button:hover {
+  background-color: #d55400;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.current-weather {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.current-weather img {
+  width: 100px;
+  margin: 10px 0;
+}
+
+.current-weather h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.details {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: 300px;
+}
+
+.details h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.details p {
+  font-size: 1rem;
+  margin: 5px 0;
+  opacity: 0.9;
 }
